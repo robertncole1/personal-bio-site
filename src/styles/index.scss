@@ -1,6 +1,17 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import 'variables';
+@import 'cardStyles';
+@import 'headerStyles';
 
-body {
-  background-color: $favColor;
+.navbar-logo {
+  width: 200px;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+}
+
+#root {
+  position: relative;
 }

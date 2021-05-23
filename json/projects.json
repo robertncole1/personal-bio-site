@@ -1,0 +1,22 @@
+{
+  "-MaJkucgRWsSeYrzrefY": {
+    "firebaseKey":"-MaJkucgRWsSeYrzrefY",
+    "title":"Design Project",
+    "description":"This is the best project",
+    "screenshot":"https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_612/https://robcolecreative.com/wp-content/uploads/2020/01/design-icon.png",
+    "technologiesUsed":"HTML, CSS, Vanilla JavaScript, Version Control with Github",
+    "available":true,
+    "url":"https://github.com/nss-evening-cohort-8/js-part-deux",
+    "githubUrl":"https://github.com/nss-evening-cohort-8/js-part-deux"
+  },
+  "-MaJkuciPHl2_pGKQJqp":{
+    "firebaseKey":"-MaJkuciPHl2_pGKQJqp",
+    "title":"Development Project",
+    "description":"This is the best project",
+    "screenshot":"https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_662/https://robcolecreative.com/wp-content/uploads/2020/01/web-icon.png",
+    "technologiesUsed":"HTML, CSS, Vanilla JavaScript, Version Control with Github",
+    "available":true,
+    "url":"https://github.com/nss-evening-cohort-8/js-part-deux",
+    "githubUrl":"https://github.com/nss-evening-cohort-8/js-part-deux"
+  }
+}

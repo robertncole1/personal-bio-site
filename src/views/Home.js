@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Projects from '../App/components/Projects';
 import Header from '../App/components/Header';
+import About from '../App/components/About';
+import Tech from '../App/components/Technologies';
 
 export default function Home({
   firebaseKey,
@@ -19,7 +21,14 @@ export default function Home({
       <div className="hero-image">
         <Header/>
       </div>
-      <div className="card-cont">
+      <div className="fullPage" id="bioPage">
+        <About/>
+      </div>
+      <div id="technologiesPage">
+        <Tech/>
+      </div>
+      <h4 className="title">Projects</h4>
+      <div className="card-cont" id="projects-section">
         <Projects className="projects-page"
           setProjects={setProjects}
           firebaseKey={firebaseKey}

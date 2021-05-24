@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import {
   Collapse,
@@ -7,10 +7,9 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  Button,
-  NavbarBrand
+  Button
 } from 'reactstrap';
-import { signInUser, signOutUser } from '../../helpers/auth';
+import { signOutUser } from '../../helpers/auth';
 
 const NavBar = ({ admin }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,9 +26,8 @@ const NavBar = ({ admin }) => {
 
   return (
     <div>
-      <Navbar className="sticky-nav" color="light" light expand="md">
+      <Navbar className="sticky-nav" light expand="md">
       <img className= "navbar-logo" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://robcolecreative.com/wp-content/uploads/2020/01/Artboard-36-e1578094220699.png"/>
-      <NavbarBrand href="/" className="mr-auto">Home</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -40,10 +38,13 @@ const NavBar = ({ admin }) => {
                 {
                   admin
                     ? <Button color='danger' onClick={signOutUser}>Log Out</Button>
-                    : <Button color='info' onClick={signInUser}>Sign In</Button>
+                    : ''
                 }
               </NavItem>
             }
+            <NavItem>
+              <Link className="nav-link" to="/#projects-section">Projects</Link>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>

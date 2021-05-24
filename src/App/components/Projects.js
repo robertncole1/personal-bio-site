@@ -38,7 +38,6 @@ const Projects = ({
       <CardBody>
         <CardText>{project.description}</CardText>
         <CardLink href={project.url}>View Project</CardLink>
-        <CardLink href={project.githubUrl}>GitHub Link</CardLink>
         <CardLink href="#" onClick={() => handleProjectsButton('edit')}>
           {editing ? 'Close Form' : 'Edit Board'}
         </CardLink>

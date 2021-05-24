@@ -1,22 +1,32 @@
 {
-  "-MaJkucgRWsSeYrzrefY": {
+  "-MaJkucgRWsSeYrzrefY":{
     "firebaseKey":"-MaJkucgRWsSeYrzrefY",
-    "title":"Design Project",
-    "description":"This is the best project",
-    "screenshot":"https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_612/https://robcolecreative.com/wp-content/uploads/2020/01/design-icon.png",
+    "title":"Sorting Hat",
+    "description":"The purpose of this project was to use Javascript to create a one-page app that would randomly sort you into a Hogwarts House. It also required the ability to delete, or expel, the student and put them into a new category. The focus of the project was getting comfortable with arrays and objects.",
+    "screenshot":"https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_496/https://robcolecreative.com/wp-content/uploads/2021/03/sorting-hat.png",
     "technologiesUsed":"HTML, CSS, Vanilla JavaScript, Version Control with Github",
     "available":true,
-    "url":"https://github.com/nss-evening-cohort-8/js-part-deux",
+    "url":"https://rc-sorting-hat.netlify.app/",
     "githubUrl":"https://github.com/nss-evening-cohort-8/js-part-deux"
   },
   "-MaJkuciPHl2_pGKQJqp":{
     "firebaseKey":"-MaJkuciPHl2_pGKQJqp",
-    "title":"Development Project",
-    "description":"This is the best project",
-    "screenshot":"https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_662/https://robcolecreative.com/wp-content/uploads/2020/01/web-icon.png",
+    "title":"Sorting Hat",
+    "description":"The purpose of this project was to use Javascript to create a one-page app that would randomly sort you into a Hogwarts House. It also required the ability to delete, or expel, the student and put them into a new category. The focus of the project was getting comfortable with arrays and objects.",
+    "screenshot":"https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_496/https://robcolecreative.com/wp-content/uploads/2021/03/sorting-hat.png",
     "technologiesUsed":"HTML, CSS, Vanilla JavaScript, Version Control with Github",
     "available":true,
-    "url":"https://github.com/nss-evening-cohort-8/js-part-deux",
+    "url":"https://rc-sorting-hat.netlify.app/",
+    "githubUrl":"https://github.com/nss-evening-cohort-8/js-part-deux"
+  },
+  "-MaJkucgRWsSeYrzrefV":{
+    "firebaseKey":"-MaJkucgRWsSeYrzrefV",
+    "title":"Sorting Hat",
+    "description":"The purpose of this project was to use Javascript to create a one-page app that would randomly sort you into a Hogwarts House. It also required the ability to delete, or expel, the student and put them into a new category. The focus of the project was getting comfortable with arrays and objects.",
+    "screenshot":"https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_496/https://robcolecreative.com/wp-content/uploads/2021/03/sorting-hat.png",
+    "technologiesUsed":"HTML, CSS, Vanilla JavaScript, Version Control with Github",
+    "available":true,
+    "url":"https://rc-sorting-hat.netlify.app/",
     "githubUrl":"https://github.com/nss-evening-cohort-8/js-part-deux"
   }
 }

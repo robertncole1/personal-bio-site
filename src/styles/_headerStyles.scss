@@ -1,7 +1,7 @@
 .hero-image {
   display: block;
   background-image: linear-gradient(89deg,#003459 0%,#007ea7 100%); 
-  height: 600px;
+  height: 500px;
 }
 
 .hero-text {
@@ -12,4 +12,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+
+  h1 {
+    font-weight: 700;
+  }
 }

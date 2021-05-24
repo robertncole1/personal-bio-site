@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { getProjects } from '../helpers/data/projectData';
 import Routes from '../helpers/Routes';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 function App() {
   const [admin, setAdmin] = useState(null);
@@ -24,7 +25,7 @@ function App() {
   return (
     <>
      <Router>
-       <div>
+      <div id="nav-styles">
         <NavBar admin={admin} />
       </div>
       <Routes
@@ -32,6 +33,7 @@ function App() {
       setProjects={setProjects}
       />
       </Router>
+      <Footer/>
     </>
   );
 }

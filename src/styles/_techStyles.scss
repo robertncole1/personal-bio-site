@@ -1,0 +1,27 @@
+#technologies {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 800px;
+}
+
+.tech-logo {
+  width: 150px;
+}
+
+#technologiesPage {
+  padding: 40px 0px;
+  background-color: $darkBlue;
+}
+
+.fullPage-2 {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  color: white;
+
+  h4 {
+    padding-bottom: 40px;
+  }
+}

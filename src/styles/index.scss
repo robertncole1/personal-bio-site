@@ -1,7 +1,18 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import 'variables';
 @import 'cardStyles';
+@import 'aboutStyles';
+@import 'footerStyles';
+@import 'techStyles';
 @import 'headerStyles';
+
+body {
+  font-family: $primary-font;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .navbar-logo {
   width: 200px;
@@ -10,6 +21,12 @@
 .sticky-nav {
   position: sticky;
   top: 0;
+}
+
+#nav-styles {
+  width: 75%;
+  margin: auto;
+  background-color: $white;
 }
 
 #root {

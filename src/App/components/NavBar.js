@@ -7,7 +7,8 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  Button
+  Button,
+  NavbarBrand
 } from 'reactstrap';
 import { signOutUser } from '../../helpers/auth';
 
@@ -19,7 +20,7 @@ const NavBar = ({ admin }) => {
   const authenticated = () => (
     <>
             <NavItem>
-              <Link className="nav-link" to="/">Projects</Link>
+              <Link className="nav-link" to="/add-project">Add Project</Link>
             </NavItem>
     </>
   );
@@ -27,11 +28,19 @@ const NavBar = ({ admin }) => {
   return (
     <div>
       <Navbar className="sticky-nav" light expand="md">
-      <img className= "navbar-logo" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://robcolecreative.com/wp-content/uploads/2020/01/Artboard-36-e1578094220699.png"/>
+      <NavbarBrand href="/">
+        <img className="navbar-logo" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://robcolecreative.com/wp-content/uploads/2020/01/Artboard-36-e1578094220699.png"/>
+      </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="ml-auto" navbar>
           { admin && authenticated()}
+            <NavItem>
+              <Link className="nav-link" to="/#projects-section">Projects</Link>
+            </NavItem>
+            <NavItem>
+              <Link className="nav-link" to="/#technologiesPage">Technologies</Link>
+            </NavItem>
             {
               admin !== null
               && <NavItem>
@@ -42,9 +51,6 @@ const NavBar = ({ admin }) => {
                 }
               </NavItem>
             }
-            <NavItem>
-              <Link className="nav-link" to="/#projects-section">Projects</Link>
-            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>

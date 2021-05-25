@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Home from '../views/Home';
+import AddProject from '../views/AddProject';
 
 export default function Routes({
   firebaseKey,
@@ -12,7 +13,8 @@ export default function Routes({
   url,
   setProjects,
   githubUrl,
-  projects
+  projects,
+  admin
 }) {
   return (
     <Switch>
@@ -24,6 +26,19 @@ export default function Routes({
         description={description}
         technologiesUsed={technologiesUsed}
         url={url}
+        admin={admin}
+        githubUrl={githubUrl}
+        projects={projects}/>}
+      />
+      <Route exact path='/add-project' component={() => <AddProject
+        setProjects={setProjects}
+        firebaseKey={firebaseKey}
+        screenshot={screenshot}
+        title={title}
+        description={description}
+        technologiesUsed={technologiesUsed}
+        url={url}
+        admin={admin}
         githubUrl={githubUrl}
         projects={projects}/>}
       />
@@ -40,5 +55,6 @@ Routes.propTypes = {
   githubUrl: PropTypes.string,
   url: PropTypes.string,
   setProjects: PropTypes.func,
-  projects: PropTypes.array
+  projects: PropTypes.array,
+  admin: PropTypes.any
 };

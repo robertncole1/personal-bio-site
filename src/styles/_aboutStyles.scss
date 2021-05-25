@@ -2,11 +2,15 @@
   width: 75%;
   margin: auto;
   min-width: 470px;
-  padding: 70px 0px;
+  padding: 90px 0px 100px 0px;
 
   p, h2 {
     text-align: left;
     padding-top: 20px;
+  }
+
+  h2 {
+    color: $lightBlue;
   }
 }
 

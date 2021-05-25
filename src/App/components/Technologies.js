@@ -12,7 +12,7 @@ export default function Tech() {
         <img className= "tech-logo" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_512/https://robcolecreative.com/wp-content/uploads/2021/03/sass-1.png"/>
         <img className= "tech-logo" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_512/https://robcolecreative.com/wp-content/uploads/2021/03/vs-code.png"/>
         <img className= "tech-logo" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_512/https://robcolecreative.com/wp-content/uploads/2021/03/github-1.png"/>
-        <img className= "tech-logo" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_512/https://robcolecreative.com/wp-content/uploads/2021/03/git.png"/>
+        <img className= "tech-logo" src="https://robcolecreative.com/wp-content/uploads/2021/05/react.png"/>
         <img className= "tech-logo" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_512/https://robcolecreative.com/wp-content/uploads/2021/03/ps.png"/>
         <img className= "tech-logo" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_512/https://robcolecreative.com/wp-content/uploads/2021/03/ai.png"/>
         <img className= "tech-logo" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_512/https://robcolecreative.com/wp-content/uploads/2021/03/firebase.png"/>

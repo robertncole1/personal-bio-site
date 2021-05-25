@@ -14,17 +14,17 @@ export default function Home({
   url,
   setProjects,
   githubUrl,
-  projects
+  projects,
+  admin
 }) {
   return (
     <>
-      <div className="hero-image">
-        <Header/>
-      </div>
+      <Header/>
+      <div className="skew-color"></div>
       <div className="fullPage" id="bioPage">
         <About/>
       </div>
-      <div id="technologiesPage">
+      <div className="technologies" id="technologiesPage">
         <Tech/>
       </div>
       <h4 className="title">Projects</h4>
@@ -39,6 +39,7 @@ export default function Home({
           url={url}
           githubUrl={githubUrl}
           projects={projects}
+          admin={admin}
         />
       </div>
     </>
@@ -54,5 +55,6 @@ Home.propTypes = {
   githubUrl: PropTypes.string,
   url: PropTypes.string,
   setProjects: PropTypes.func,
-  projects: PropTypes.array
+  projects: PropTypes.array,
+  admin: PropTypes.any
 };

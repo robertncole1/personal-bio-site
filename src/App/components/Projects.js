@@ -5,11 +5,13 @@ import {
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { deleteProject } from '../../helpers/data/projectData';
+import ProjectsForm from './ProjectsForm';
 
 const Projects = ({
-  firebaseKey,
   setProjects,
-  projects
+  projects,
+  firebaseKey,
+  admin
 }) => {
   const [editing, setEditing] = useState(false);
 
@@ -27,6 +29,15 @@ const Projects = ({
     }
   };
 
+  const editView = () => (
+    <>
+      <CardLink onClick={() => handleProjectsButton('edit')}>
+        {editing ? 'Close Form' : 'Edit Card'}
+      </CardLink>
+      <CardLink className="delete-link" onClick={() => handleProjectsButton('delete')}>Delete</CardLink>
+    </>
+  );
+
   return (
     projects.map((project) => (
       <Card key={project.firebaseKey}>
@@ -37,11 +48,20 @@ const Projects = ({
       <img width="100%" className="img-container" src={project.screenshot} alt={project.title}/>
       <CardBody>
         <CardText>{project.description}</CardText>
-        <CardLink href={project.url}>View Project</CardLink>
-        <CardLink href="#" onClick={() => handleProjectsButton('edit')}>
-          {editing ? 'Close Form' : 'Edit Board'}
-        </CardLink>
-        <CardLink className="delete-link" href="#" onClick={() => handleProjectsButton('delete')}>Delete</CardLink>
+        <CardLink target="_blank" href={project.url}>View Project</CardLink>
+        { admin && editView() }
+        {
+          editing && <ProjectsForm
+          setProjects={setProjects}
+          firebaseKey={project.firebaseKey}
+          title={project.title}
+          description={project.description}
+          screenshot={project.screenshot}
+          technologiesUsed={project.technologiesUsed}
+          url={project.url}
+          githubUrl={project.githubUrl}
+          />
+        }
       </CardBody>
     </Card>
     ))
@@ -49,9 +69,10 @@ const Projects = ({
 };
 
 Projects.propTypes = {
-  firebaseKey: PropTypes.string.isRequired,
+  firebaseKey: PropTypes.string,
   setProjects: PropTypes.func,
-  projects: PropTypes.array
+  projects: PropTypes.array,
+  admin: PropTypes.any
 };
 
 export default Projects;

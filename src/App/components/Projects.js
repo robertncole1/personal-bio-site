@@ -10,18 +10,17 @@ import ProjectsForm from './ProjectsForm';
 const Projects = ({
   setProjects,
   projects,
-  firebaseKey,
   admin
 }) => {
   const [editing, setEditing] = useState(false);
 
-  const handleProjectsButton = (type) => {
+  const handleProjectsButton = (fbKey, type) => {
     switch (type) {
       case 'edit':
         setEditing((prevState) => !prevState);
         break;
       case 'delete':
-        deleteProject(firebaseKey)
+        deleteProject(fbKey)
           .then(setProjects);
         break;
       default:
@@ -29,12 +28,12 @@ const Projects = ({
     }
   };
 
-  const editView = () => (
+  const editView = (fbKey) => (
     <>
-      <CardLink onClick={() => handleProjectsButton('edit')}>
+      <CardLink onClick={() => handleProjectsButton(fbKey, 'edit')}>
         {editing ? 'Close Form' : 'Edit Card'}
       </CardLink>
-      <CardLink className="delete-link" onClick={() => handleProjectsButton('delete')}>Delete</CardLink>
+      <CardLink className="delete-link" onClick={() => handleProjectsButton(fbKey, 'delete')}>Delete</CardLink>
     </>
   );
 
@@ -49,7 +48,7 @@ const Projects = ({
       <CardBody>
         <CardText>{project.description}</CardText>
         <CardLink target="_blank" href={project.url}>View Project</CardLink>
-        { admin && editView() }
+        { admin && editView(project.firebaseKey) }
         {
           editing && <ProjectsForm
           setProjects={setProjects}
@@ -69,7 +68,6 @@ const Projects = ({
 };
 
 Projects.propTypes = {
-  firebaseKey: PropTypes.string,
   setProjects: PropTypes.func,
   projects: PropTypes.array,
   admin: PropTypes.any

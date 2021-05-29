@@ -36,10 +36,10 @@ const NavBar = ({ admin }) => {
           <Nav className="ml-auto" navbar>
           { admin && authenticated()}
             <NavItem>
-              <Link className="nav-link" to="/#projects-section">Projects</Link>
+              <Link className="nav-link" to="/#technologiesPage">Technologies</Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/#technologiesPage">Technologies</Link>
+              <Link className="nav-link" to="/#projects-section">Projects</Link>
             </NavItem>
             {
               admin !== null

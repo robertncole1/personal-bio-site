@@ -44,7 +44,7 @@ const ProjectsForm = ({
   return (
     <div className='project-form'>
       <Form id='addProjectForm' autoComplete='off' onSubmit={handleSubmit}>
-        <h2>Edit Card</h2>
+        <h2>Project Form</h2>
         <FormGroup>
           <Label for="title">Title:</Label>
           <Input

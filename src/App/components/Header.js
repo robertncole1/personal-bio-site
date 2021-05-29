@@ -12,7 +12,7 @@ export default function Header() {
           <div className="hero-text">
             <h2>Create | Code | Capture</h2>
             <p>I specialize in all things visual, focusing my efforts on web development, graphic design, and videography.</p>
-            <Button color='secondary'>Contact Me</Button>
+            <Button color='secondary' href="mailto:robertncole1@gmail.com">Email Me</Button>
           </div>
         </Col>
         <Col>
